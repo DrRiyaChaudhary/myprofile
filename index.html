@@ -12,7 +12,10 @@
       color: #333;
     }
 
-    /* ===== HERO ===== */
+    a { color: #1abc9c; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* HERO */
     .hero {
       background: linear-gradient(135deg, #2c3e50, #34495e);
       color: #fff;
@@ -29,11 +32,11 @@
       margin-bottom: 20px;
     }
 
-    .hero h1 { margin: 10px 0 5px; }
+    .hero h1 { margin: 10px 0; }
     .hero h2 { font-weight: 300; margin-bottom: 20px; }
 
     .hero p {
-      max-width: 750px;
+      max-width: 760px;
       margin: auto;
       line-height: 1.6;
       color: #e0e0e0;
@@ -45,14 +48,11 @@
       padding: 12px 25px;
       background: #1abc9c;
       color: #fff;
-      text-decoration: none;
       border-radius: 6px;
       font-weight: 600;
     }
 
-    .btn:hover { background: #16a085; }
-
-    /* ===== SECTIONS ===== */
+    /* SECTIONS */
     section {
       max-width: 1100px;
       margin: auto;
@@ -66,52 +66,46 @@
       margin-bottom: 20px;
     }
 
-    section p, li {
-      font-size: 16px;
-      line-height: 1.7;
-      color: #555;
-    }
-
-    ul { padding-left: 20px; }
-    li { margin-bottom: 8px; }
-
     .alt { background: #fff; }
 
-    /* ===== GRID ===== */
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; line-height: 1.6; }
+
+    /* GRID */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 30px;
     }
 
-    /* ===== PAPER CARD ===== */
+    /* PAPERS */
     .paper {
       background: #fff;
       padding: 20px;
       border-left: 4px solid #1abc9c;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      margin-bottom: 15px;
+      margin-bottom: 18px;
     }
 
-    /* ===== CITATION GRAPH ===== */
+    /* CITATION CHART */
     .chart {
       display: flex;
-      gap: 15px;
+      gap: 18px;
       align-items: flex-end;
-      height: 200px;
-      margin-top: 20px;
+      height: 220px;
+      margin-top: 30px;
     }
 
     .bar {
-      width: 45px;
+      width: 55px;
       background: #1abc9c;
       color: #fff;
       text-align: center;
       font-size: 14px;
-      border-radius: 5px 5px 0 0;
+      border-radius: 6px 6px 0 0;
+      padding-top: 5px;
     }
 
-    /* ===== FOOTER ===== */
     footer {
       background: #2c3e50;
       color: #fff;
@@ -124,17 +118,17 @@
 
 <body>
 
-<!-- ===== HERO ===== -->
+<!-- HERO -->
 <div class="hero">
   <img src="assets/images/riya-chaudhary.jpg" alt="Dr. Riya Chaudhary">
 
   <h1>Dr. Riya Chaudhary</h1>
-  <h2>PhD Scholar – Biological Sciences</h2>
+  <h2>PhD Scholar | Biological Sciences</h2>
 
   <p>
-    PhD scholar in Biological Sciences with a strong background in immunology,
-    molecular biology, and infectious disease research, with peer-reviewed
-    international publications.
+    PhD scholar in Biological Sciences with strong expertise in immunology,
+    molecular biology, and host–virus interactions, contributing to
+    peer-reviewed international research.
   </p>
 
   <a class="btn" href="assets/cv/Dr_riya_chaudhary.pdf" target="_blank">
@@ -142,7 +136,7 @@
   </a>
 </div>
 
-<!-- ===== CONTACT ===== -->
+<!-- CONTACT -->
 <section>
   <h3>Contact Information</h3>
   <p>
@@ -152,28 +146,28 @@
   </p>
 </section>
 
-<!-- ===== EDUCATION ===== -->
+<!-- EDUCATION -->
 <section class="alt">
   <h3>Education</h3>
   <ul>
     <li><strong>PhD (Ongoing)</strong> – Biological Sciences, IISER Bhopal</li>
-    <li><strong>M.Sc.</strong> – Banaras Hindu University (2017)</li>
-    <li><strong>B.Sc.</strong> – C.S.J.M. University (2014)</li>
+    <li><strong>M.Sc.</strong> – Banaras Hindu University, 2017</li>
+    <li><strong>B.Sc.</strong> – C.S.J.M. University, 2014</li>
   </ul>
 </section>
 
-<!-- ===== RESEARCH ===== -->
+<!-- RESEARCH -->
 <section>
   <h3>Research Interests & Experience</h3>
   <ul>
-    <li>Host–virus interactions and cytokine storm mechanisms</li>
-    <li>Inflammatory signaling pathways in RNA virus infection</li>
+    <li>Host–virus interaction and cytokine storm mechanisms</li>
     <li>Innate immunity and immunometabolism</li>
+    <li>Inflammatory signaling pathways in RNA virus infection</li>
     <li>Translational immunology and infectious diseases</li>
   </ul>
 </section>
 
-<!-- ===== TECHNICAL ===== -->
+<!-- TECHNICAL -->
 <section class="alt">
   <h3>Technical Expertise</h3>
   <div class="grid">
@@ -190,41 +184,43 @@
   </div>
 </section>
 
-<!-- ===== PUBLICATIONS ===== -->
+<!-- PUBLICATIONS -->
 <section>
   <h3>Publications & Research Papers</h3>
 
   <div class="paper">
-    <strong>Role of herbal plants in prevention and treatment of parasitic diseases</strong><br>
+    <strong><a href="https://www.bhu.ac.in/research_pub/jsr/Volumes/JSR_64_01_2020/6.pdf" target="_blank">
+      Role of herbal plants in prevention and treatment of parasitic diseases</a></strong><br>
     A. Singh, A. Mishra, <strong>R. Chaudhary</strong>, V. Kumar<br>
-    <em>Journal of Scientific Research</em>, 64(1): 50–58, 2020<br>
-    📈 Citations: 47
+    <em>Journal of Scientific Research</em>, 2020 · Citations: 47
   </div>
 
   <div class="paper">
-    <strong>Interplay of host and viral factors in inflammatory pathway mediated cytokine storm during RNA virus infection</strong><br>
+    <strong><a href="https://www.sciencedirect.com/science/article/pii/S2590255523000082" target="_blank">
+      Interplay of host and viral factors in inflammatory pathway mediated cytokine storm during RNA virus infection</a></strong><br>
     <strong>R. Chaudhary</strong>, A. Meher, P. Krishnamoorthy, H. Kumar<br>
-    <em>Current Research in Immunology</em>, 2023<br>
-    📈 Citations: 24
+    <em>Current Research in Immunology</em>, 2023 · Citations: 24
   </div>
 
   <div class="paper">
-    <strong>Role of miRNA in Ebola diagnosis and therapeutics</strong><br>
+    <strong><a href="https://www.sciencedirect.com/science/chapter/edited-volume/abs/pii/B9780323996617000011" target="_blank">
+      Role of miRNA in Ebola diagnosis and therapeutics</a></strong><br>
     A. Meher, N. Das, <strong>R. Chaudhary</strong>, H. Kumar<br>
-    <em>MicroRNA in Human Infectious Diseases</em>, 2024<br>
-    📈 Citations: 1
+    <em>MicroRNA in Human Infectious Diseases</em>, 2024
   </div>
 
   <div class="paper">
-    <strong>A novel role of circCPSF6 regulating antiviral innate immunity via miR-665 and PCBP2-IPS-1 axis</strong><br>
+    <strong><a href="https://www.biorxiv.org/content/10.1101/2025.11.03.686289v1.abstract" target="_blank">
+      circCPSF6 regulating antiviral innate immunity via miR-665 and PCBP2-IPS-1 axis</a></strong><br>
     A. Meher, <strong>R. Chaudhary</strong>, H. Kumar<br>
-    <em>bioRxiv (Preprint)</em>, 2025
+    <em>bioRxiv</em>, 2025
   </div>
 
   <div class="paper">
-    <strong>Immunometabolic role of metabolic enzyme PANK4 in regulation of TLR7/9-mediated innate immunity</strong><br>
-    <strong>R. Chaudhary</strong>, A. Meher, P. Katekar, D. Vats, D. Nayak, H. Kumar<br>
-    <em>bioRxiv (Preprint)</em>, 2025
+    <strong><a href="https://www.biorxiv.org/content/10.1101/2025.10.22.676442v1.abstract" target="_blank">
+      Immunometabolic role of metabolic enzyme PANK4 in TLR7/9-mediated innate immunity</a></strong><br>
+    <strong>R. Chaudhary</strong> et al.<br>
+    <em>bioRxiv</em>, 2025
   </div>
 
   <p style="margin-top:20px;">
@@ -234,30 +230,27 @@
   </p>
 </section>
 
-<!-- ===== CITATIONS ===== -->
+<!-- CITATIONS -->
 <section class="alt">
   <h3>Citation Overview</h3>
 
-<div class="chart">
-  <div class="bar" style="height:18%">5<br><small>2021</small></div>
-  <div class="bar" style="height:26%">7<br><small>2022</small></div>
-  <div class="bar" style="height:44%">12<br><small>2023</small></div>
-  <div class="bar" style="height:78%">21<br><small>2024</small></div>
-  <div class="bar" style="height:100%">27<br><small>2025</small></div>
-</div>
+  <div class="chart">
+    <div class="bar" style="height:18%">5<br>2021</div>
+    <div class="bar" style="height:26%">7<br>2022</div>
+    <div class="bar" style="height:44%">12<br>2023</div>
+    <div class="bar" style="height:78%">21<br>2024</div>
+    <div class="bar" style="height:100%">27<br>2025</div>
+  </div>
 
-<p>
-  <strong>Total Citations:</strong> 72 |
-  <strong>h-index:</strong> 2 |
-  <strong>i10-index:</strong> 2
-</p>
+  <p>
+    <strong>Total Citations:</strong> 72 |
+    <strong>h-index:</strong> 2 |
+    <strong>i10-index:</strong> 2
+  </p>
 </section>
 
-<!-- ===== FOOTER ===== -->
 <footer>
-  © 2026 Dr. Riya Chaudhary · Academic & Research Profile  
-  <br>
-  <em>This website is for professional and academic representation only.</em>
+  © 2026 Dr. Riya Chaudhary · Academic Research Profile  
 </footer>
 
 </body>
