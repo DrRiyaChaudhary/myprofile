@@ -34,13 +34,7 @@
 
     .hero h1 { margin: 10px 0; }
     .hero h2 { font-weight: 300; margin-bottom: 20px; }
-
-    .hero p {
-      max-width: 820px;
-      margin: auto;
-      line-height: 1.6;
-      color: #e0e0e0;
-    }
+    .hero p { max-width: 820px; margin: auto; line-height: 1.6; color: #e0e0e0; }
 
     .btn {
       display: inline-block;
@@ -52,30 +46,32 @@
       font-weight: 600;
     }
 
-    section {
-      max-width: 1100px;
-      margin: auto;
-      padding: 50px 20px;
+    /* TABS */
+    .tabs { text-align: center; margin: 20px 0; }
+    .tab-button {
+      padding: 10px 20px;
+      cursor: pointer;
+      border: none;
+      background: #ecf0f1;
+      margin: 0 5px;
+      border-radius: 5px 5px 0 0;
+      font-weight: bold;
     }
+    .tab-button.active { background: #1abc9c; color: #fff; }
+    .tab-content { display: none; background: #fff; padding: 20px; border: 1px solid #ddd; border-top: none; max-width: 1100px; margin: auto; }
 
-    section h3 {
-      color: #2c3e50;
-      border-left: 5px solid #1abc9c;
-      padding-left: 12px;
-      margin-bottom: 20px;
-    }
-
-    .alt { background: #fff; }
-
+    /* LISTS */
     ul { padding-left: 20px; }
     li { margin-bottom: 8px; line-height: 1.6; }
 
+    /* GRID */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 30px;
     }
 
+    /* PAPERS */
     .paper {
       background: #fff;
       padding: 20px;
@@ -84,6 +80,7 @@
       margin-bottom: 18px;
     }
 
+    /* CITATION CHART */
     .chart {
       display: flex;
       gap: 18px;
@@ -91,7 +88,6 @@
       height: 220px;
       margin-top: 30px;
     }
-
     .bar {
       width: 55px;
       background: #1abc9c;
@@ -108,6 +104,7 @@
       text-align: center;
       padding: 25px;
       font-size: 14px;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -117,77 +114,53 @@
 <!-- HERO -->
 <div class="hero">
   <img src="assets/images/riya-chaudhary.jpg" alt="Dr. Riya Chaudhary">
-
   <h1>Dr. Riya Chaudhary</h1>
   <h2>PhD Scholar | Immunology & Infectious Diseases</h2>
-
   <p>
     PhD scholar in Biological Sciences with strong expertise in immunology,
     molecular biology, and host–pathogen interactions, focusing on
     immunometabolic regulation of innate immune signaling during viral infections.
   </p>
-
-  <a class="btn" href="assets/cv/Dr_riya_chaudhary.pdf" target="_blank">
-    Download CV
-  </a>
+  <a class="btn" href="assets/cv/Dr_riya_chaudhary.pdf" target="_blank">Download CV</a>
 </div>
 
-<!-- CONTACT -->
-<section>
-  <h3>Contact Information</h3>
-  <p>
-    📧 <strong>Email:</strong> riyac19@iiserb.ac.in<br>
-    📞 <strong>Phone:</strong> 9838565963, 9826880944<br>
-    📍 <strong>Address:</strong> Mehgaon, Bhind, Madhya Pradesh, India
-  </p>
-</section>
+<!-- TABS NAV -->
+<div class="tabs">
+  <button class="tab-button active" onclick="showTab('education')">Education</button>
+  <button class="tab-button" onclick="showTab('research')">Research</button>
+  <button class="tab-button" onclick="showTab('publications')">Publications</button>
+  <button class="tab-button" onclick="showTab('citations')">Citations</button>
+  <button class="tab-button" onclick="showTab('achievements')">Achievements</button>
+</div>
 
-<!-- EDUCATION -->
-<section class="alt">
+<!-- TAB CONTENTS -->
+<div id="education" class="tab-content" style="display:block;">
   <h3>Education</h3>
   <ul>
     <li>
-      <strong>2020–Present:</strong> Ph.D. in Immunology & Infectious Diseases,  
-      IISER Bhopal, India  
-      <br>
+      <strong>2020–Present:</strong> Ph.D. in Immunology & Infectious Diseases, IISER Bhopal, India<br>
       <em>Thesis:</em> Immunometabolic role of PANK4 in TLR7/9-mediated innate immunity during influenza virus infection
     </li>
-    <li>
-      <strong>2015–2017:</strong> M.Sc. in Biochemistry, Banaras Hindu University, Varanasi
-    </li>
-    <li>
-      <strong>2011–2014:</strong> B.Sc. in Chemistry & Biotechnology, C.S.J.M. University, Kanpur
-    </li>
+    <li><strong>2015–2017:</strong> M.Sc. in Biochemistry, Banaras Hindu University, Varanasi</li>
+    <li><strong>2011–2014:</strong> B.Sc. in Chemistry & Biotechnology, C.S.J.M. University, Kanpur</li>
   </ul>
-</section>
+</div>
 
-<!-- RESEARCH INTERESTS -->
-<section>
-  <h3>Research Interests</h3>
+<div id="research" class="tab-content">
+  <h3>Research Interests & Experience</h3>
   <p>
-    My research focuses on the integration of cellular metabolism and innate immune
-    signaling during viral infections. I investigate immunometabolic control of
-    endosomal TLR7/9 and cytosolic RNA-sensing pathways, cytokine regulation,
-    host–pathogen interactions, and non-canonical roles of metabolic enzymes
-    in antiviral immunity.
+    Focused on innate immune regulation during viral infections, including metabolic control
+    of TLR7/9 and cytosolic RNA-sensing pathways, cytokine regulation, host–pathogen interactions,
+    and non-canonical roles of metabolic enzymes in antiviral immunity.
   </p>
-</section>
-
-<!-- EXPERIENCE -->
-<section class="alt">
-  <h3>Research & Teaching Experience</h3>
   <ul>
     <li>2021–2022: Volunteer, COVID-19 Testing Facility, IISER Bhopal</li>
     <li>2016–2017: Master’s thesis on oxidative and ER stress in filarial parasites, BHU</li>
     <li>2024–2025: Teaching Assistant – Host–Pathogen Interaction (NPTEL)</li>
-    <li>2023–2025: Training of Master’s students for dissertation research</li>
+    <li>2023–2025: Training Master’s students for dissertation research</li>
     <li>2021: Teaching Assistantship – BIO-102 (Cell Biology)</li>
   </ul>
-</section>
-
-<!-- TECHNICAL -->
-<section>
-  <h3>Technical Expertise</h3>
+  <h4>Technical Expertise</h4>
   <div class="grid">
     <ul>
       <li>Cell culture & primary immune cell isolation</li>
@@ -200,58 +173,51 @@
       <li>R programming & bioinformatics databases</li>
     </ul>
   </div>
-</section>
+</div>
 
-<!-- PUBLICATIONS -->
-<section>
-  <h3>Publications & Research Papers</h3>
+<div id="publications" class="tab-content">
+  <h3>Publications</h3>
 
   <div class="paper">
-    <strong><a href="https://www.bhu.ac.in/research_pub/jsr/Volumes/JSR_64_01_2020/6.pdf" target="_blank">
-      Role of herbal plants in prevention and treatment of parasitic diseases</a></strong><br>
-    A. Singh, A. Mishra, <strong>R. Chaudhary</strong>, V. Kumar<br>
-    <em>Journal of Scientific Research</em>, 2020 · Citations: 47
+    <a href="https://www.bhu.ac.in/research_pub/jsr/Volumes/JSR_64_01_2020/6.pdf" target="_blank">
+      Role of Herbal Plants in Prevention and Treatment of Parasitic Diseases
+    </a><br><em>Journal of Scientific Research</em>, 2020
   </div>
 
   <div class="paper">
-    <strong><a href="https://www.sciencedirect.com/science/article/pii/S2590255523000082" target="_blank">
-      Interplay of host and viral factors in inflammatory pathway mediated cytokine storm during RNA virus infection</a></strong><br>
-    <strong>R. Chaudhary</strong>, A. Meher, P. Krishnamoorthy, H. Kumar<br>
-    <em>Current Research in Immunology</em>, 2023 · Citations: 24
+    <a href="https://www.sciencedirect.com/science/article/pii/S2590255523000082" target="_blank">
+      Interplay of host and viral factors in inflammatory pathway mediated cytokine storm
+    </a><br><em>Current Research in Immunology</em>, 2023
   </div>
 
   <div class="paper">
-    <strong><a href="https://www.sciencedirect.com/science/chapter/edited-volume/abs/pii/B9780323996617000011" target="_blank">
-      Role of miRNA in Ebola diagnosis and therapeutics</a></strong><br>
-    A. Meher, N. Das, <strong>R. Chaudhary</strong>, H. Kumar<br>
-    <em>MicroRNA in Human Infectious Diseases</em>, 2024
+    <a href="https://www.sciencedirect.com/science/chapter/edited-volume/abs/pii/B9780323996617000011" target="_blank">
+      Role of miRNA in Ebola diagnosis and therapeutics
+    </a><br><em>Elsevier Book Chapter</em>, 2024
   </div>
 
   <div class="paper">
-    <strong><a href="https://www.biorxiv.org/content/10.1101/2025.11.03.686289v1.abstract" target="_blank">
-      circCPSF6 regulating antiviral innate immunity via miR-665 and PCBP2-IPS-1 axis</a></strong><br>
-    A. Meher, <strong>R. Chaudhary</strong>, H. Kumar<br>
-    <em>bioRxiv</em>, 2025
+    <a href="https://www.biorxiv.org/content/10.1101/2025.11.03.686289v1.abstract" target="_blank">
+      circCPSF6 regulating antiviral innate immunity
+    </a><br><em>bioRxiv</em>, 2025
   </div>
 
   <div class="paper">
-    <strong><a href="https://www.biorxiv.org/content/10.1101/2025.10.22.676442v1.abstract" target="_blank">
-      Immunometabolic role of metabolic enzyme PANK4 in TLR7/9-mediated innate immunity</a></strong><br>
-    <strong>R. Chaudhary</strong> et al.<br>
-    <em>bioRxiv</em>, 2025
+    <a href="https://www.biorxiv.org/content/10.1101/2025.10.22.676442v1.abstract" target="_blank">
+      Immunometabolic role of PANK4 in TLR7/9-mediated innate immunity
+    </a><br><em>bioRxiv</em>, 2025
   </div>
 
   <p style="margin-top:20px;">
     🔗 <a href="https://scholar.google.com/citations?user=PF2TMnUAAAAJ&hl=en" target="_blank">
-      View Google Scholar Profile
+      Google Scholar Profile
     </a>
   </p>
-</section>
+</div>
 
-<!-- CITATIONS -->
-<section class="alt">
-  <h3>Citation Overview</h3>
-
+<div id="citations" class="tab-content">
+  <h3>Citation Metrics</h3>
+  <p><strong>Total Citations:</strong> 72 | <strong>h-index:</strong> 2 | <strong>i10-index:</strong> 2</p>
   <div class="chart">
     <div class="bar" style="height:18%">5<br>2021</div>
     <div class="bar" style="height:26%">7<br>2022</div>
@@ -259,16 +225,9 @@
     <div class="bar" style="height:78%">21<br>2024</div>
     <div class="bar" style="height:100%">27<br>2025</div>
   </div>
+</div>
 
-  <p>
-    <strong>Total Citations:</strong> 72 |
-    <strong>h-index:</strong> 2 |
-    <strong>i10-index:</strong> 2
-  </p>
-</section>
-
-<!-- ACHIEVEMENTS -->
-<section class="alt">
+<div id="achievements" class="tab-content">
   <h3>Achievements & Conferences</h3>
   <ul>
     <li>CSIR–UGC JRF (AIR-69), 2019</li>
@@ -276,11 +235,23 @@
     <li>Qualified GATE, 2018 & 2019</li>
     <li>VIROCON-2024, DRDE Gwalior</li>
   </ul>
-</section>
+</div>
 
 <footer>
   © 2026 Dr. Riya Chaudhary · Academic Research Profile
 </footer>
+
+<script>
+  function showTab(tabId) {
+    var contents = document.querySelectorAll('.tab-content');
+    contents.forEach(c => c.style.display = 'none');
+    document.getElementById(tabId).style.display = 'block';
+
+    var buttons = document.querySelectorAll('.tab-button');
+    buttons.forEach(b => b.classList.remove('active'));
+    event.currentTarget.classList.add('active');
+  }
+</script>
 
 </body>
 </html>
