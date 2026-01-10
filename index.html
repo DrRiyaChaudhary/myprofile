@@ -15,7 +15,7 @@
     /* ===== HERO ===== */
     .hero {
       background: linear-gradient(135deg, #2c3e50, #34495e);
-      color: white;
+      color: #fff;
       text-align: center;
       padding: 70px 20px;
     }
@@ -54,7 +54,7 @@
 
     /* ===== SECTIONS ===== */
     section {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
       padding: 50px 20px;
     }
@@ -67,8 +67,8 @@
     }
 
     section p, li {
-      line-height: 1.7;
       font-size: 16px;
+      line-height: 1.7;
       color: #555;
     }
 
@@ -84,15 +84,16 @@
       gap: 30px;
     }
 
-    /* ===== PUBLICATION CARDS ===== */
+    /* ===== PAPER CARD ===== */
     .paper {
-      background: #ffffff;
+      background: #fff;
       padding: 20px;
       border-left: 4px solid #1abc9c;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      margin-bottom: 15px;
     }
 
-    /* ===== CITATION GRAPH (CSS ONLY) ===== */
+    /* ===== CITATION GRAPH ===== */
     .chart {
       display: flex;
       gap: 15px;
@@ -102,12 +103,12 @@
     }
 
     .bar {
-      width: 40px;
+      width: 45px;
       background: #1abc9c;
+      color: #fff;
       text-align: center;
-      color: white;
       font-size: 14px;
-      border-radius: 4px 4px 0 0;
+      border-radius: 5px 5px 0 0;
     }
 
     /* ===== FOOTER ===== */
@@ -132,10 +133,13 @@
 
   <p>
     PhD scholar in Biological Sciences with a strong background in immunology,
-    molecular biology, and biomedical research, with peer-reviewed publications.
+    molecular biology, and infectious disease research, with peer-reviewed
+    international publications.
   </p>
 
-  <a class="btn" href="assets/cv/Dr_riya_chaudhary.pdf" target="_blank">Download CV</a>
+  <a class="btn" href="assets/cv/Dr_riya_chaudhary.pdf" target="_blank">
+    Download CV
+  </a>
 </div>
 
 <!-- ===== CONTACT ===== -->
@@ -158,18 +162,18 @@
   </ul>
 </section>
 
-<!-- ===== RESEARCH INTEREST ===== -->
+<!-- ===== RESEARCH ===== -->
 <section>
   <h3>Research Interests & Experience</h3>
   <ul>
-    <li>Host–virus interaction and inflammatory signaling</li>
-    <li>Cytokine storm mechanisms in RNA viral infections</li>
-    <li>Immunological and molecular disease pathways</li>
-    <li>Experimental biology with translational relevance</li>
+    <li>Host–virus interactions and cytokine storm mechanisms</li>
+    <li>Inflammatory signaling pathways in RNA virus infection</li>
+    <li>Innate immunity and immunometabolism</li>
+    <li>Translational immunology and infectious diseases</li>
   </ul>
 </section>
 
-<!-- ===== TECHNICAL EXPERTISE ===== -->
+<!-- ===== TECHNICAL ===== -->
 <section class="alt">
   <h3>Technical Expertise</h3>
   <div class="grid">
@@ -191,31 +195,62 @@
   <h3>Publications & Research Papers</h3>
 
   <div class="paper">
-    <strong>Role of Herbal Plants in Prevention and Treatment of Parasitic Diseases</strong><br>
-    Journal of Scientific Research, 2020
+    <strong>Role of herbal plants in prevention and treatment of parasitic diseases</strong><br>
+    A. Singh, A. Mishra, <strong>R. Chaudhary</strong>, V. Kumar<br>
+    <em>Journal of Scientific Research</em>, 64(1): 50–58, 2020<br>
+    📈 Citations: 47
   </div>
 
-  <div class="paper" style="margin-top:15px;">
-    <strong>Interplay of Host and Viral Factors in Cytokine Storm During RNA Virus Infection</strong><br>
-    Current Research in Immunology
+  <div class="paper">
+    <strong>Interplay of host and viral factors in inflammatory pathway mediated cytokine storm during RNA virus infection</strong><br>
+    <strong>R. Chaudhary</strong>, A. Meher, P. Krishnamoorthy, H. Kumar<br>
+    <em>Current Research in Immunology</em>, 2023<br>
+    📈 Citations: 24
+  </div>
+
+  <div class="paper">
+    <strong>Role of miRNA in Ebola diagnosis and therapeutics</strong><br>
+    A. Meher, N. Das, <strong>R. Chaudhary</strong>, H. Kumar<br>
+    <em>MicroRNA in Human Infectious Diseases</em>, 2024<br>
+    📈 Citations: 1
+  </div>
+
+  <div class="paper">
+    <strong>A novel role of circCPSF6 regulating antiviral innate immunity via miR-665 and PCBP2-IPS-1 axis</strong><br>
+    A. Meher, <strong>R. Chaudhary</strong>, H. Kumar<br>
+    <em>bioRxiv (Preprint)</em>, 2025
+  </div>
+
+  <div class="paper">
+    <strong>Immunometabolic role of metabolic enzyme PANK4 in regulation of TLR7/9-mediated innate immunity</strong><br>
+    <strong>R. Chaudhary</strong>, A. Meher, P. Katekar, D. Vats, D. Nayak, H. Kumar<br>
+    <em>bioRxiv (Preprint)</em>, 2025
   </div>
 
   <p style="margin-top:20px;">
-    🔗 <a href="https://scholar.google.com" target="_blank">Google Scholar Profile</a>
+    🔗 <a href="https://scholar.google.com/citations?user=PF2TMnUAAAAJ&hl=en" target="_blank">
+      View Google Scholar Profile
+    </a>
   </p>
 </section>
 
-<!-- ===== CITATION VISUALIZATION ===== -->
+<!-- ===== CITATIONS ===== -->
 <section class="alt">
-  <h3>Citation Overview (Illustrative)</h3>
-  <p>This visual represents citation growth over recent years.</p>
+  <h3>Citation Overview</h3>
 
-  <div class="chart">
-    <div class="bar" style="height:40%">2019</div>
-    <div class="bar" style="height:65%">2020</div>
-    <div class="bar" style="height:85%">2021</div>
-    <div class="bar" style="height:100%">2022</div>
-  </div>
+<div class="chart">
+  <div class="bar" style="height:18%">5<br><small>2021</small></div>
+  <div class="bar" style="height:26%">7<br><small>2022</small></div>
+  <div class="bar" style="height:44%">12<br><small>2023</small></div>
+  <div class="bar" style="height:78%">21<br><small>2024</small></div>
+  <div class="bar" style="height:100%">27<br><small>2025</small></div>
+</div>
+
+<p>
+  <strong>Total Citations:</strong> 72 |
+  <strong>h-index:</strong> 2 |
+  <strong>i10-index:</strong> 2
+</p>
 </section>
 
 <!-- ===== FOOTER ===== -->
