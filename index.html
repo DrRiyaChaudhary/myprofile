@@ -2,67 +2,167 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Dr. Riya Chaudhary</title>
+  <title>Dr. Riya Chaudhary | PhD Scholar</title>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f5f7fa;
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f4f6f9;
+      color: #333;
+    }
+
+    /* ===== Hero Section ===== */
+    .hero {
+      background: linear-gradient(135deg, #2c3e50, #34495e);
+      color: white;
       text-align: center;
-      padding-top: 80px;
+      padding: 70px 20px;
     }
-    h1 {
-      color: #2c3e50;
-    }
-    p {
-      color: #555;
-      font-size: 18px;
-      max-width: 650px;
-      margin: 20px auto;
-      line-height: 1.6;
-    }
-    img {
+
+    .hero img {
       width: 160px;
       height: 160px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid #2c3e50;
+      border: 4px solid #fff;
       margin-bottom: 20px;
     }
-    a.cv-link {
+
+    .hero h1 {
+      margin: 10px 0 5px;
+      font-size: 32px;
+    }
+
+    .hero h2 {
+      font-weight: 300;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #e0e0e0;
+    }
+
+    .btn {
       display: inline-block;
-      margin-top: 20px;
-      padding: 10px 18px;
-      background: #2c3e50;
+      margin-top: 25px;
+      padding: 12px 25px;
+      background: #1abc9c;
       color: #fff;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 6px;
       font-size: 16px;
+      font-weight: 600;
     }
-    a.cv-link:hover {
-      background: #1a252f;
+
+    .btn:hover {
+      background: #16a085;
+    }
+
+    /* ===== Sections ===== */
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    section h3 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+      border-left: 4px solid #1abc9c;
+      padding-left: 10px;
+    }
+
+    section p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #555;
+    }
+
+    section ul {
+      padding-left: 20px;
+    }
+
+    section ul li {
+      margin-bottom: 10px;
+    }
+
+    .alt {
+      background: #ffffff;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
     }
   </style>
 </head>
+
 <body>
 
-  <!-- Profile Image -->
-  <img src="assets/images/riya-chaudhary.jpg" alt="Riya Chaudhary" />
+  <!-- ===== HERO ===== -->
+  <div class="hero">
+    <img src="assets/images/riya-chaudhary.jpg" alt="Dr. Riya Chaudhary">
 
-  <h1>Dr. Riya Chaudhary</h1>
+    <h1>Dr. Riya Chaudhary</h1>
+    <h2>PhD Scholar – Biological Sciences</h2>
 
-  <p>
-    PhD scholar in Biological Sciences with a strong background in immunology,
-    molecular biology, and scientific research.
-  </p>
+    <p>
+      PhD scholar in Biological Sciences with a strong background in immunology,
+      molecular biology, and scientific research.
+    </p>
 
-  <!-- CV Download -->
-  <a class="cv-link" href="assets/cv/Dr_riya_chaudhary.pdf" target="_blank">
-    View / Download CV
-  </a>
+    <a class="btn" href="assets/cv/Dr_riya_chaudhary.pdf" target="_blank">
+      View / Download CV
+    </a>
+  </div>
 
-  <p style="margin-top: 30px; font-style: italic;">
-    Website content will be available soon.
-  </p>
+  <!-- ===== ABOUT ===== -->
+  <section>
+    <h3>About</h3>
+    <p>
+      Dr. Riya Chaudhary is a dedicated researcher with extensive academic training
+      and hands-on experience in molecular biology, immunology, and microbiological
+      techniques. Her work focuses on understanding biological mechanisms with
+      strong relevance to human health and disease.
+    </p>
+  </section>
+
+  <!-- ===== EXPERTISE ===== -->
+  <section class="alt">
+    <h3>Research & Technical Expertise</h3>
+    <ul>
+      <li>Immunological techniques (ELISA, Immunoprecipitation)</li>
+      <li>Molecular biology (DNA/RNA isolation, PCR, SDS-PAGE)</li>
+      <li>Microbiology (Bacterial culture, staining, microscopy)</li>
+      <li>Analytical techniques (Spectrophotometry, Chromatography)</li>
+      <li>Basic bioinformatics tools</li>
+    </ul>
+  </section>
+
+  <!-- ===== STATUS ===== -->
+  <section>
+    <h3>Current Status</h3>
+    <p>
+      PhD Scholar, Department of Biological Sciences, IISER Bhopal (M.P.)
+    </p>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    © 2026 Dr. Riya Chaudhary · Academic Profile  
+    <br>
+    <em>This website is for professional and academic representation only.</em>
+  </footer>
 
 </body>
 </html>
